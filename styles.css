@@ -1,0 +1,65 @@
+body {
+    height: calc(100vh - 16px);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), linear-gradient(116.77deg, #E2B0FF 0%, #7367F0 100.83%, #9F44D3 100.83%);
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border: 16px solid white;
+    border-bottom: 48px solid white;
+    border-radius: 8px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), linear-gradient(116.77deg, #CE9FFC 0%, #5041EC 100.83%), #C373FF;
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    
+    top: 140px;
+    left: -45px;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 100%;
+
+    opacity: 0.4;
+    background-color: #CEC9D9;
+    box-shadow: 50px 8px #CEC9D9, 130px 10px #CEC9D9, 190px 70px #CEC9D9, 260px 35px #CEC9D9, 340px 25px #CEC9D9;
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    
+    top: 160px;
+    left: -40px;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    background-color: #CEC9D9;
+    box-shadow: 50px 20px #CEC9D9, 120px 40px #CEC9D9, 200px 15px #CEC9D9, 260px 30px #CEC9D9, 330px 30px #CEC9D9, 380px 10px #CEC9D9;
+}
+
+.clouds {
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    z-index: 1;
+    top: 220px;
+    left: -20px;
+    background-color: #fff;
+    box-shadow: 55px -15px #fff, 125px 10px #fff, 175px 20px #fff, 250px 10px #fff, 320px 5px #fff, 380px 10px #fff;
+}
+
